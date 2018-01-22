@@ -116,6 +116,7 @@ void wrpStats::Read_8WVR()
         if (!len) break;// last object has no name associated with it, and the transfrom is garbage
 
         fread(dObjName,sizeof(char),len,map);
+        dObjName[len] = 0;
     }
     // should now be at eof
     printf(" Done\nNumber of P3D objects: %ld\n", dObjIndex);
