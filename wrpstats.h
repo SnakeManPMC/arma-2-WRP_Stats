@@ -19,8 +19,8 @@ private:
     float cellsize, elevation, dDir[3][4];
     int len, texturegrid, terraingrid;
     long noofmaterials;
-    short materialindex, materiallenght;
-    ulong dObjIndex;
+    short materialindex;
+    ulong dObjIndex, materiallenght;
 };
 
 #endif // WRPSTATS_H
